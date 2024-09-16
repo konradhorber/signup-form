@@ -1,0 +1,74 @@
+/* minimal CSS reset */
+html {
+box-sizing: border-box;
+font-size: 16px;
+}
+  
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+margin: 0;
+padding: 0;
+font-weight: normal;
+}
+
+ol, ul {
+list-style: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* regular design */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    width: clamp(0rem, 30vw, 60rem);
+    height: 100vh;
+    position: relative;
+}
+
+.image-holder,
+.image-holder * {
+    height:inherit;
+    width: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.shadow {
+    background-color: black;
+    opacity: 30%;
+}
+
+.logo-bar {
+    position: relative;
+    top: 30%;
+    width: inherit;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 200%;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.image-source,
+.image-source * {
+    position: relative;
+    top: 90%;
+    color: white;
+    text-align: center;
+}
