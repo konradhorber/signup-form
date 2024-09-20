@@ -118,6 +118,7 @@ body {
     justify-content: center;
     background-color: var(--formBackgroundColor);
     --marginToSidebar: 2rem;
+    width: 100vw;
 }
 
 
@@ -127,6 +128,7 @@ h1 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: var(--marginToSidebar);
+    max-width: 50ch;
 }
 
 .form-row-wrapper {
@@ -136,6 +138,7 @@ h1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    width: inherit;
 }
 
 .form-row {
