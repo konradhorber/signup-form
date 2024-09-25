@@ -44,9 +44,6 @@ button {
     /* Corrects font smoothing for webkit */
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
-
-    /* Corrects inability to style clickable `input` types in iOS */
-    -webkit-appearance: none;
 }
 
 /* Remove excess padding and border in Firefox 4+ */
@@ -193,4 +190,17 @@ input {
     color: #09863b;
     text-decoration: none;
     font-weight: bold;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border: 1px solid blue;
+}
+
+input:user-valid{
+    border-color: #09863b;
+}
+
+input:user-invalid {
+    border-color: red;
 }
